@@ -5,12 +5,10 @@
 </template>
 
 <script>
+require('./common/stylus/index.styl')
+
 export default {
-  created() {
-    this.$http.get('/static/data.json').then((res) => {
-      console.log(res);
-    })
-  }
+
 }
 </script>
 

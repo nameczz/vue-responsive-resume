@@ -12,5 +12,11 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
 </body>
+<script>
+    window.rem = document.documentElement.getBoundingClientRect().width / 25;
+    window.rem = window.rem > 40 ? 40 : window.rem;
+    document.documentElement.style.fontSize = window.rem + 'px';
+    console.log(window.rem)
+</script>
 
 </html>
